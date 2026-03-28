@@ -1,212 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ferinda Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ferinda Kusuma Ratih</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-<style>
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-
-body{
-background:#ffffff;
-color:#111;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:30px 0;
-}
-
-.logo{
-font-weight:600;
-font-size:20px;
-}
-
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-}
-
-.hero{
-padding:100px 0;
-display:flex;
-align-items:center;
-justify-content:space-between;
-flex-wrap:wrap;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.hero span{
-color:#666;
-font-size:18px;
-}
-
-.hero p{
-margin:20px 0;
-color:#555;
-max-width:500px;
-}
-
-.btn{
-background:#000;
-color:#fff;
-padding:12px 24px;
-border-radius:8px;
-text-decoration:none;
-}
-
-section{
-padding:80px 0;
-}
-
-.title{
-text-align:center;
-font-size:30px;
-margin-bottom:40px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#f5f5f5;
-padding:20px;
-border-radius:12px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-margin-bottom:10px;
-}
-
-.contact{
-text-align:center;
-}
-
-footer{
-text-align:center;
-padding:30px;
-color:#777;
-}
-
-@media(max-width:768px){
-.hero{flex-direction:column;text-align:center;}
-}
-
-</style>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div class="container">
+<!-- Cursor -->
+<div class="cursor"></div>
 
-<header>
-<div class="logo">Ferinda</div>
+<!-- Navbar -->
 <nav>
-<a href="#about">About</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
+  <h2>FR</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#project">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </nav>
-</header>
 
-<section class="hero">
-
-<div>
-<h1>Ferinda Kusuma Ratih</h1>
-<span>Graphic Designer | Content Creator | Video Editor</span>
-
-<p>
-Graphic Designer dan Content Creator dengan pengalaman lebih dari 5 tahun dalam desain visual, video production, dan digital marketing. Berpengalaman membuat konten visual untuk kampanye digital, social media marketing, dan branding yang meningkatkan engagement serta brand awareness.
-</p>
-
-<a href="#portfolio" class="btn">View Portfolio</a>
-</div>
-
+<!-- HERO -->
+<section class="hero fade">
+  <h1>Ferinda Kusuma Ratih</h1>
+  <p>Graphic Designer | Content Creator | Video Editor</p>
 </section>
 
-<section id="portfolio">
-
-<h2 class="title">My Work</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://picsum.photos/400?1">
-<p>Social Media Design</p>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400?2">
-<p>Branding Design</p>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400?3">
-<p>Content Campaign</p>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400?4">
-<p>Video Editing</p>
-</div>
-
-</div>
-
+<!-- ABOUT -->
+<section id="about" class="about fade">
+  <h2>About Me</h2>
+  <p>
+    Graphic Designer dan Content Creator dengan pengalaman lebih dari 5 tahun dalam desain visual, 
+    video production, dan digital marketing. Berpengalaman membuat konten visual untuk kampanye digital, 
+    social media marketing, dan branding yang meningkatkan engagement serta brand awareness.
+  </p>
 </section>
 
-<section id="about">
+<!-- PROJECT -->
+<section id="project" class="project fade">
+  <h2>Latest Projects</h2>
 
-<h2 class="title">About Me</h2>
+  <div class="filter">
+    <button class="active">Traveling</button>
+    <button>Creative</button>
+    <button>Nature</button>
+  </div>
 
-<p style="text-align:center; max-width:700px; margin:auto; color:#555;">
-Saya adalah Graphic Designer dan Content Creator yang berfokus pada pembuatan visual yang menarik, modern, dan memiliki impact terhadap brand. Saya terbiasa mengerjakan desain untuk social media, campaign digital, dan video editing.
-</p>
-
+  <div class="grid">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
 </section>
 
-<section id="contact">
-
-<h2 class="title">Contact</h2>
-
-<div class="contact">
-<p>Email: your@email.com</p>
-<p>Instagram: @username</p>
-<p>LinkedIn: linkedin.com/in/username</p>
-</div>
-
-</section>
-
-<footer>
-© 2026 Ferinda Portfolio
-</footer>
-
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>
